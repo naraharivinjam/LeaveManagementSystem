@@ -1,6 +1,8 @@
 # Leave Management System
 
-A professional Leave Management System developed using ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap.
+![Banner](Assets/Banner.png)
+
+A professional Leave Management System built using ASP.NET Core MVC, Entity Framework Core, SQL Server, and Bootstrap.
 
 ---
 

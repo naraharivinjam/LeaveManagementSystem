@@ -50,35 +50,15 @@ wwwroot
 
 ## Screenshots
 
-### Login
+![Login](Screenshots/Login.png)
 
-![Login](Login.png)
+![Admin Dashboard](Screenshots/AdminDashboard.png)
 
----
+![Employee Dashboard](Screenshots/EmployeeDashboard.png)
 
-### Admin Dashboard
+![Employee Management](Screenshots/EmployeeManagement.png)
 
-![Admin Dashboard](AdminDashboard.png)
-
----
-
-### Employee Dashboard
-
-![Employee Dashboard](EmployeeDashboard.png)
-
----
-
-### Employee Management
-
-![Employee Management](EmployeeManagement.png)
-
----
-
-### Leave Requests
-
-![Leave Requests](LeaveRequests.png)
-
----
+![Leave Requests](Screenshots/LeaveRequests.png)
 
 ## Installation
 

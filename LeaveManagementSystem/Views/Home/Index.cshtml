@@ -1,0 +1,125 @@
+﻿<h2>
+    Welcome @Context.Session.GetString("UserName")
+</h2>
+
+<div class="container mt-4">
+
+    <h2>Leave Management Dashboard</h2>
+
+    @if (Context.Session.GetString("Role") == "Admin")
+    {
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+                <div class="card text-white bg-primary shadow">
+                    <div class="card-body text-center">
+                        <h4>Total Employees</h4>
+                        <h2>@ViewBag.TotalEmployees</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-success shadow">
+                    <div class="card-body text-center">
+                        <h4>Total Leave Types</h4>
+                        <h2>@ViewBag.TotalLeaveTypes</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-info shadow">
+                    <div class="card-body text-center">
+                        <h4>Total Requests</h4>
+                        <h2>@ViewBag.TotalRequests</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-md-4">
+                <div class="card text-dark bg-warning shadow">
+                    <div class="card-body text-center">
+                        <h4>Pending</h4>
+                        <h2>@ViewBag.Pending</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-success shadow">
+                    <div class="card-body text-center">
+                        <h4>Approved</h4>
+                        <h2>@ViewBag.Approved</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-white bg-danger shadow">
+                    <div class="card-body text-center">
+                        <h4>Rejected</h4>
+                        <h2>@ViewBag.Rejected</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    }
+
+    @if (Context.Session.GetString("Role") == "Employee")
+    {
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card bg-primary text-white mb-3">
+                    <div class="card-body text-center">
+                        <h4>My Requests</h4>
+                        <h2>@ViewBag.MyRequests</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-warning mb-3">
+                    <div class="card-body text-center">
+                        <h4>Pending</h4>
+                        <h2>@ViewBag.MyPending</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-success text-white mb-3">
+                    <div class="card-body text-center">
+                        <h4>Approved</h4>
+                        <h2>@ViewBag.MyApproved</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-danger text-white mb-3">
+                    <div class="card-body text-center">
+                        <h4>Rejected</h4>
+                        <h2>@ViewBag.MyRejected</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-info text-white">
+                <div class="card-body text-center">
+                    <h4>Leave Balance</h4>
+                    <h2>@ViewBag.LeaveBalance</h2>
+                </div>
+            </div>
+
+        </div>
+    }
+
+</div>

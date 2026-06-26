@@ -52,31 +52,31 @@ wwwroot
 
 ### Login
 
-![Login](Login.png)
+![Login](Screenshots/Login.png)
 
 ---
 
 ### Admin Dashboard
 
-![Admin Dashboard](AdminDashboard.png)
+![Admin Dashboard](Screenshots/AdminDashboard.png)
 
 ---
 
 ### Employee Dashboard
 
-![Employee Dashboard](EmployeeDashboard.png)
+![Employee Dashboard](Screenshots/EmployeeDashboard.png)
 
 ---
 
 ### Employee Management
 
-![Employee Management](EmployeeManagement.png)
+![Employee Management](Screenshots/EmployeeManagement.png)
 
 ---
 
 ### Leave Requests
 
-![Leave Requests](LeaveRequests.png)
+![Leave Requests](Screenshots/LeaveRequests.png)
 
 ---
 

@@ -8,6 +8,7 @@
     <title>@ViewData["Title"] - LeaveManagementSystem</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/LeaveManagementSystem.styles.css" asp-append-version="true" />
 </head>
@@ -37,7 +38,7 @@
                                 <a class="nav-link"
                                    asp-controller="Home"
                                    asp-action="Index">
-                                    Dashboard
+                                    <i class="bi bi-speedometer2"></i> Dashboard
                                 </a>
                             </li>
                         }
@@ -48,7 +49,7 @@
                                 <a class="nav-link"
                                    asp-controller="Employee"
                                    asp-action="Index">
-                                    Employees
+                                    <i class="bi bi-people-fill"></i> Employees
                                 </a>
                             </li>
 
@@ -56,7 +57,7 @@
                                 <a class="nav-link"
                                    asp-controller="LeaveType"
                                    asp-action="Index">
-                                    Leave Types
+                                    <i class="bi bi-calendar-check"></i> Leave Types
                                 </a>
                             </li>
 
@@ -64,7 +65,7 @@
                                 <a class="nav-link"
                                    asp-controller="LeaveRequest"
                                    asp-action="Index">
-                                    Leave Requests
+                                    <i class="bi bi-clipboard-check"></i> Leave Requests
                                 </a>
                             </li>
                         }
@@ -75,7 +76,7 @@
                                 <a class="nav-link"
                                    asp-controller="LeaveRequest"
                                    asp-action="Create">
-                                    Apply Leave
+                                    <i class="bi bi-plus-circle"></i> Apply Leave
                                 </a>
                             </li>
 
@@ -83,7 +84,7 @@
                                 <a class="nav-link"
                                    asp-controller="LeaveRequest"
                                    asp-action="MyLeaves">
-                                    My Leaves
+                                    <i class="bi bi-journal-text"></i> My Leaves
                                 </a>
                             </li>
                         }
@@ -99,7 +100,7 @@
                         <a class="btn btn-outline-light"
                            asp-controller="Account"
                            asp-action="Logout">
-                            Logout
+                           <i class="bi bi-box-arrow-right"></i> Logout
                         </a>
                     }
                     else
@@ -132,6 +133,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 

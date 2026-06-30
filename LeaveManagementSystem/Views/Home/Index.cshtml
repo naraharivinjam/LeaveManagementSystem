@@ -14,8 +14,13 @@
             <div class="col-md-4">
                 <div class="card text-white bg-primary shadow">
                     <div class="card-body text-center">
-                        <h4>Total Employees</h4>
+
+                        <i class="bi bi-people-fill display-4"></i>
+
+                        <h4 class="mt-2">Total Employees</h4>
+
                         <h2>@ViewBag.TotalEmployees</h2>
+
                     </div>
                 </div>
             </div>
@@ -23,8 +28,13 @@
             <div class="col-md-4">
                 <div class="card text-white bg-success shadow">
                     <div class="card-body text-center">
+
+                        <i class="bi bi-calendar-check-fill display-4"></i>
+
                         <h4>Total Leave Types</h4>
+
                         <h2>@ViewBag.TotalLeaveTypes</h2>
+
                     </div>
                 </div>
             </div>
@@ -32,8 +42,13 @@
             <div class="col-md-4">
                 <div class="card text-white bg-info shadow">
                     <div class="card-body text-center">
+
+                        <i class="bi bi-clipboard-check-fill display-4"></i>
+
                         <h4>Total Requests</h4>
+
                         <h2>@ViewBag.TotalRequests</h2>
+
                     </div>
                 </div>
             </div>
@@ -45,8 +60,13 @@
             <div class="col-md-4">
                 <div class="card text-dark bg-warning shadow">
                     <div class="card-body text-center">
+
+                        <i class="bi bi-hourglass-split display-4"></i>
+
                         <h4>Pending</h4>
+
                         <h2>@ViewBag.Pending</h2>
+
                     </div>
                 </div>
             </div>
@@ -54,8 +74,13 @@
             <div class="col-md-4">
                 <div class="card text-white bg-success shadow">
                     <div class="card-body text-center">
+
+                        <i class="bi bi-check-circle-fill display-4"></i>
+
                         <h4>Approved</h4>
+
                         <h2>@ViewBag.Approved</h2>
+
                     </div>
                 </div>
             </div>
@@ -63,8 +88,13 @@
             <div class="col-md-4">
                 <div class="card text-white bg-danger shadow">
                     <div class="card-body text-center">
+
+                        <i class="bi bi-x-circle-fill display-4"></i>
+
                         <h4>Rejected</h4>
+
                         <h2>@ViewBag.Rejected</h2>
+
                     </div>
                 </div>
             </div>
@@ -123,3 +153,45 @@
     }
 
 </div>
+
+@if (Context.Session.GetString("Role") == "Admin")
+{
+    <div class="card shadow mt-4">
+        <div class="card-body">
+            <h4>Leave Request Statistics</h4>
+
+            <canvas id="leaveChart"></canvas>
+        </div>
+    </div>
+}
+
+@section Scripts
+{
+    <script>
+        const ctx = document.getElementById('leaveChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Pending', 'Approved', 'Rejected'],
+                datasets: [{
+                    label: 'Leave Requests',
+                    data: [
+                        @ViewBag.Pending,
+                        @ViewBag.Approved,
+                        @ViewBag.Rejected
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+}

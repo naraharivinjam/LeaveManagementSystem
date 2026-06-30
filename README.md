@@ -52,33 +52,51 @@ wwwroot
 
 ## Screenshots
 
-### Login
+### 🔐 Login Page
 
 ![Login](Screenshots/Login.png)
 
 ---
 
-### Admin Dashboard
+### 📊 Admin Dashboard
 
 ![Admin Dashboard](Screenshots/AdminDashboard.png)
 
 ---
 
-### Employee Dashboard
-
-![Employee Dashboard](Screenshots/EmployeeDashboard.png)
-
----
-
-### Employee Management
+### 👥 Employee Management
 
 ![Employee Management](Screenshots/EmployeeManagement.png)
 
 ---
 
-### Leave Requests
+### 📅 Leave Types
+
+![Leave Types](Screenshots/LeaveTypes.png)
+
+---
+
+### 📝 Leave Requests
 
 ![Leave Requests](Screenshots/LeaveRequests.png)
+
+---
+
+### 👨‍💼 Employee Dashboard
+
+![Employee Dashboard](Screenshots/EmployeeDashboard.png)
+
+---
+
+### ➕ Apply Leave
+
+![Apply Leave](Screenshots/ApplyLeave.png)
+
+---
+
+### 📋 My Leaves
+
+![My Leaves](Screenshots/MyLeaves.png)
 
 ---
 
